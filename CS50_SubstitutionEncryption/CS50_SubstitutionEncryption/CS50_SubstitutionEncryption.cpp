@@ -112,7 +112,7 @@ void GetCipher()
             }
 
             //apply cipher chars to alphabet
-            for (size_t i = 0; i < sizeof(cipherText); i++)
+            for (size_t i = 0; i < sizeof(cipherText) / 4; i++)
             {
                 cipherText[i] = cipher[i];
             }
